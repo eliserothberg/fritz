@@ -1,0 +1,10 @@
+.thePic {
+  background-image: url(./img/andyFritz.png);
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#member {
+  text-align: center;
+}

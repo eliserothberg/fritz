@@ -1,18 +1,11 @@
 import React from 'react';
-// import logo from './logo.svg';
-// import { Button } from 'react-bootstrap';
-import { Grid } from 'react-bootstrap';
-// import { Column } from 'react-bootstrap';
-import { Row } from 'react-bootstrap';
-import { Col } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import './General.css';
-
-
-
-
+import './Services.css';
 
 const Services = (
   <div id="services">
+  <h1>Our Services</h1>
   <Grid>
     <Row className="show-grid">
       <Col xs={4} md={4}><p>Preliminary Survey</p>
@@ -41,14 +34,6 @@ const Services = (
             <h4>A survey of a property, building or residence and its relation to a flood plain.  Elevation surveys are used by lending agencies and insurance companies to determine the need for flood insurance or if a site is suitable for a new structure.</h4></Col>
       <Col xs={4} md={4}><p>Subdivision Survey</p>
             <h4>A type of land survey in which the legal boundaries of an area are located and the area is divided into parcels of lots, streets, rights-of-way and other accessories.  All necessary corners or dividing lines are marked or monumented.</h4></Col>
-    </Row>
-    <Row className="show-grid">
-      <Col xs={3} md={3}><p></p></Col>
-      <Col xs={3} md={3}><p></p></Col>
-      <Col xs={3} md={3}><p></p></Col>
-      <Col xs={3} md={3}><p></p></Col>
-      <Col xs={3} md={3}><p></p></Col>
-      <Col xs={3} md={3}><p></p></Col>
     </Row>
   </Grid>
   </div>

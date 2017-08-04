@@ -7,10 +7,16 @@ import './App.css';
 import scrollToComponent from 'react-scroll-to-component';
 // import Login from './containers/Login';
 import Services from './Services';
+import FAQ from './FAQ';
+import About from './About';
+import Contact from './Contact';
+
+
+
 
 class App extends Component {
   componentDidMount() {
-    scrollToComponent(this.Blue, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
+    scrollToComponent(this.Home, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
   }
   handleNavLink = (event) => {
   event.preventDefault();
@@ -22,28 +28,28 @@ class App extends Component {
         <Navbar inverse fixedTop collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="/">Fritz Land Surveying, LLC</a>
+              <a href="/">Pithy saying here!</a>
             </Navbar.Brand>
             <Navbar.Toggle />
             </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem onClick={() => scrollToComponent(this.Services, { offset: 0, align: 'top', duration: 1500})}>Client Services</NavItem>
+              <NavItem onClick={() => scrollToComponent(this.services, { offset: 0, align: 'top', duration: 1500})}>Client Services</NavItem>
               <NavItem onClick={() => scrollToComponent(this.faq, { offset: 0, align: 'top', duration: 1500})}>FAQ</NavItem>
               <NavItem onClick={() => scrollToComponent(this.about, { offset: 0, align: 'top', duration: 1500})}>About Us</NavItem>
               <NavItem onClick={() => scrollToComponent(this.contact, { offset: 0, align: 'top', duration: 1500})}>Contact Us</NavItem>
 
-              <RouteNavItem onClick={this.handleNavLink} href="/login">*</RouteNavItem>
+              <RouteNavItem onClick={this.handleNavLink} href="/login">*admin</RouteNavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        //         <div className="opener"></div>
+       
 
       <Routes />
-        <section className='services' ref={(section) => { this.Services = section; }}>{Services}</section>
-        <section className='faq' ref={(section) => { this.faq = section; }}>FAQ</section>
-        <section className='about' ref={(section) => { this.about = section; }}>About</section>
-        <section className='contact' ref={(section) => { this.contact = section; }}>Contact</section>
+        <section className='services' ref={(section) => { this.services = section; }}>{Services}</section>
+        <section className='faq' ref={(section) => { this.faq = section; }}>{FAQ}</section>
+        <section className='about' ref={(section) => { this.about = section; }}>{About}</section>
+        <section className='contact' ref={(section) => { this.contact = section; }}>{Contact}</section>
 
     </div>
 

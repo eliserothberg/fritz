@@ -33,27 +33,3 @@ p {
 .gooMap {
   height: 200px;
 }
-
-.show-grid {
-  padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.col-md-4.col-xs-4 {
-  position: relative;
-  max-width: 400px;
-  margin: 50px auto 0;
-  text-align: center;
-}
-.col-md-4.col-xs-4>h4 {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.col-md-4.col-xs-4>p {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  text-decoration: underline;
-  margin-bottom: 5px;
-  text-align: center;
-}
