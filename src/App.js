@@ -16,7 +16,6 @@ import Contact from './Contact';
 
 class App extends Component {
   componentDidMount() {
-    scrollToComponent(this.Home, { offset: 0, align: 'middle', duration: 500, ease:'inCirc'});
   }
   handleNavLink = (event) => {
   event.preventDefault();
@@ -34,7 +33,7 @@ class App extends Component {
             </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem onClick={() => scrollToComponent(this.services, { offset: 0, align: 'top', duration: 1500})}>Client Services</NavItem>
+              <NavItem onClick={() => scrollToComponent(this.services, { offset: 0, align: 'top', duration: 1500})}>Services</NavItem>
               <NavItem onClick={() => scrollToComponent(this.faq, { offset: 0, align: 'top', duration: 1500})}>FAQ</NavItem>
               <NavItem onClick={() => scrollToComponent(this.about, { offset: 0, align: 'top', duration: 1500})}>About Us</NavItem>
               <NavItem onClick={() => scrollToComponent(this.contact, { offset: 0, align: 'top', duration: 1500})}>Contact Us</NavItem>
@@ -51,7 +50,12 @@ class App extends Component {
         <section className='about' ref={(section) => { this.about = section; }}>{About}</section>
         <section className='contact' ref={(section) => { this.contact = section; }}>{Contact}</section>
 
+       
+    )
+  }
     </div>
+
+
 
     );
   }
