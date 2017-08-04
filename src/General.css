@@ -1,0 +1,59 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #F05F40;
+}
+a:hover,
+a:focus {
+  color: #eb3812;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.gooMap {
+  height: 200px;
+}
+
+.show-grid {
+  padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-4.col-xs-4 {
+  position: relative;
+  max-width: 400px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+.col-md-4.col-xs-4>h4 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.col-md-4.col-xs-4>p {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  text-decoration: underline;
+  margin-bottom: 5px;
+  text-align: center;
+}
