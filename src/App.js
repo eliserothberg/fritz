@@ -10,11 +10,14 @@ import Services from './Services';
 import FAQ from './FAQ';
 import About from './About';
 import Contact from './Contact';
+import Footer from './Footer';
+
 
 
 
 
 class App extends Component {
+
   componentDidMount() {
   }
   handleNavLink = (event) => {
@@ -33,12 +36,13 @@ class App extends Component {
             </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem onClick={() => scrollToComponent(this.services, { offset: 0, align: 'top', duration: 1500})}>Services</NavItem>
-              <NavItem onClick={() => scrollToComponent(this.faq, { offset: 0, align: 'top', duration: 1500})}>FAQ</NavItem>
-              <NavItem onClick={() => scrollToComponent(this.about, { offset: 0, align: 'top', duration: 1500})}>About Us</NavItem>
-              <NavItem onClick={() => scrollToComponent(this.contact, { offset: 0, align: 'top', duration: 1500})}>Contact Us</NavItem>
+              <NavItem onClick={() => scrollToComponent(this.services, { offset: -90, align: 'top', duration: 1500})}>Services</NavItem>
+              <NavItem onClick={() => scrollToComponent(this.faq, { offset: -50, align: 'top', duration: 1500})}>FAQ</NavItem>
+              <NavItem onClick={() => scrollToComponent(this.about, { offset: -10, align: 'top', duration: 1500})}>About Us</NavItem>
+              <NavItem onClick={() => scrollToComponent(this.contact, { offset: -40, align: 'top', duration: 1500})}>Contact Us</NavItem>
 
               <RouteNavItem onClick={this.handleNavLink} href="/login">*admin</RouteNavItem>
+
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -50,9 +54,8 @@ class App extends Component {
         <section className='about' ref={(section) => { this.about = section; }}>{About}</section>
         <section className='contact' ref={(section) => { this.contact = section; }}>{Contact}</section>
 
-       
-    )
-  }
+      <div className="footer">{Footer}</div>
+
     </div>
 
 

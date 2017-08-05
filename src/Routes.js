@@ -4,6 +4,8 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './containers/Home';
 import Login from './containers/Login';
 import NotFound from './containers/NotFound';
+import Services from './Services';
+
 
 export default () => (
   <Switch>
