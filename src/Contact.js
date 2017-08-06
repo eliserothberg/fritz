@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, FormGroup, FormControl, ControlLabel, Checkbox, Col } from 'react-bootstrap';
+import { Button, FormGroup, FormControl, ControlLabel, Col } from 'react-bootstrap';
 import './App.css';
 
 function FieldGroup({ id, label, help, ...props }) {
@@ -31,20 +31,6 @@ const Contact = (
       label="Email address"
       placeholder="Enter your email"
     />
-
-    <FormGroup>
-      <Checkbox inline>
-        General Query
-      </Checkbox>
-      {' '}
-      <Checkbox inline>
-        Current Customer
-      </Checkbox>
-      {' '}
-      <Checkbox inline>
-        Other
-      </Checkbox>
-    </FormGroup>
     
      <FormGroup controlId="formControlsTextarea">
       <ControlLabel>Questions or comments:</ControlLabel>

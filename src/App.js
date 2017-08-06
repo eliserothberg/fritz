@@ -30,7 +30,7 @@ class App extends Component {
         <Navbar inverse fixedTop collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="/">Pithy saying here!</a>
+              <a href="/">Home</a>
             </Navbar.Brand>
             <Navbar.Toggle />
             </Navbar.Header>

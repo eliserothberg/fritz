@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
+import RouteNavItem from '.././components/RouteNavItem';
 import './Login.css';
 
 class Login extends Component {
@@ -54,6 +55,11 @@ class Login extends Component {
             Login
           </Button>
         </form>
+        
+        <div id="toSignup">
+          <RouteNavItem onClick={this.handleNavLink} href="/signup">Need to sign up?</RouteNavItem>
+        </div>
+
       </div>
     );
   }
