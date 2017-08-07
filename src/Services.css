@@ -1,11 +1,24 @@
-.col-md-4 {
-  margin-top: 2vw;
-  text-align: center;
+.show-grid {
+  padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.col-md-4>p {
+.col-md-4.col-xs-4 {
+  position: relative;
+  max-width: 400px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+.col-md-4.col-xs-4>h4 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.col-md-4.col-xs-4>p {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   text-decoration: underline;
+  margin-bottom: 5px;
   text-align: center;
 }
 
@@ -16,13 +29,79 @@ h1 {
 }
 
 /*#services {
-background-image: url(./img/greyBG.jpg);
- background-size: cover;
-  height: 1200px;
-  margin-top: 35px;
-  padding-left: 0;
-  padding-right: 0;
+  background-color: blue;
   width: 100%;
-  background-repeat: no-repeat;
-}*/
+}
+.skew {
+  height: 200px;
+  z-index: 1;
+    background-color: grey;
+-webkit-transform: skewY(-2.5deg);
+    -moz-transform: skewY(-2.5deg);
+    -ms-transform: skewY(-2.5deg);
+    -o-transform: skewY(-2.5deg);
+    transform: skewY(-8.5deg);
+  }*/
 
+/*#services {
+  -webkit-transform: skew(-20deg);
+
+-moz-transform: skew(-20deg);
+-o-transform: skew(-20deg);
+    transform: skewY(12deg);
+}*/
+/*.skew {
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  padding: 200px, 0;
+   -webkit-transform: skew(20deg) !important;
+-moz-transform: skew(20deg) !important;
+-o-transform: skew(20deg) !important;
+    transform: skewY(-12deg) !important; 
+}
+*/
+/*#services {
+  -webkit-transform: skew(-20deg);
+
+-moz-transform: skew(-20deg);
+-o-transform: skew(-20deg);
+    transform: skewY(10deg);
+
+}*/
+/*.skew {
+  background: tomato;
+  -webkit-transform: skew(0deg, -10deg);
+  transform: skew(0deg, -10deg);
+  padding: 50px;
+  z-index: -1;
+}*/
+/*body {
+  overflow: hidden;
+}*/
+.skew {
+/*background-color: lightgray;
+*//*    transform: skewY(12deg);*/
+}
+/*#services:before{
+  content: '';
+  position: absolute;
+  width: 280vw;
+  height: 410%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  background-color: lightgray;
+  z-index: -1;
+}*/
+#services::after {
+content: '';
+  position: absolute;
+  left: 50%;
+  width: 120vw;
+  height: 230%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  background-color: lightgray;
+  z-index: -1;
+}
+#services {
+
+}
