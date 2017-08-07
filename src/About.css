@@ -8,3 +8,12 @@
 #member {
   text-align: center;
 }
+
+.col-xs-12>h1, h2, p {
+  text-align: center;
+}
+
+#aboutP {
+  width: 55vw;
+  margin-left: 15vw;
+}

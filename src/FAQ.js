@@ -1,11 +1,10 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
-import './General.css';
 import './FAQ.css';
 
 const FAQ = (
   <div id="faq">
-    <Col xs={8} md={8} xsOffset={2}>
+    <Col xs={12}>
       <h1>FAQ</h1>
 
       <h2>WHEN IS A SURVEY USUALLY NEEDED?</h2>
@@ -31,12 +30,13 @@ const FAQ = (
         <li>Abstract and title opinion if avialable and requested by the survey.</li>
       </ul>
       <br></br>
-      
+      <div id="notBullet">
       <h2>HOW MUCH WILL A SURVEY COST?</h2>
       <p>Surveyors usually charge by the hour, so land surveying cost is dependent upon many factors, such as the type of survey and equipment required, the availability of existing records, and monuments, the type of terrain, and your surveyors' familiarity and knowledge of the area.  Because of these variables, it is often difficult to determine the exact fee; however, based on general experience, the surveyor can usually furnish an approximate estimate of the cost.</p>
       <br></br>
       
       <p>To reduce the possibility of misunderstanding, the surveyor may request that you sign an agreement that includes a description of the work to be completed, approximate completion date, a lump sum price or hourly rate and a payment schedule.</p>
+      </div>
       <br></br>
     </Col>
   </div>

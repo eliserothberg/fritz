@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, FormGroup, FormControl, ControlLabel, Col } from 'react-bootstrap';
-import './App.css';
+import './Contact.css';
 
 function FieldGroup({ id, label, help, ...props }) {
   return (
@@ -13,7 +13,7 @@ function FieldGroup({ id, label, help, ...props }) {
 
 const Contact = (
   <div id="contact">
-    <Col xs={8} md={8} xsOffset={2}>
+    <Col xs={12}>
     <h1>Contact Us</h1>
 
   <form>

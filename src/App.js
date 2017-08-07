@@ -36,9 +36,9 @@ class App extends Component {
             </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem onClick={() => scrollToComponent(this.services, { offset: -90, align: 'top', duration: 1500})}>Services</NavItem>
-              <NavItem onClick={() => scrollToComponent(this.faq, { offset: -50, align: 'top', duration: 1500})}>FAQ</NavItem>
-              <NavItem onClick={() => scrollToComponent(this.about, { offset: -10, align: 'top', duration: 1500})}>About Us</NavItem>
+              <NavItem onClick={() => scrollToComponent(this.services, { offset: -40, align: 'top', duration: 1500})}>Services</NavItem>
+              <NavItem onClick={() => scrollToComponent(this.faq, { offset: -30, align: 'top', duration: 1500})}>FAQ</NavItem>
+              <NavItem onClick={() => scrollToComponent(this.about, { offset: -40, align: 'top', duration: 1500})}>About Us</NavItem>
               <NavItem onClick={() => scrollToComponent(this.contact, { offset: -40, align: 'top', duration: 1500})}>Contact Us</NavItem>
 
               <RouteNavItem onClick={this.handleNavLink} href="/login">*admin</RouteNavItem>

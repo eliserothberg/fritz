@@ -1,4 +1,16 @@
-.col-md-8.col-xs-8.col-xs-offset-2>h1, h2 {
+h1, h2 {
   text-align: center;
   text-decoration: underline;
+}
+ul {
+  margin-left: 10vw;
+}
+.faq {
+  width: 75vw;
+  margin-left: 15vw;
+}
+
+#notBullet {
+  width: 50vw;
+  margin-left: 10vw;
 }
